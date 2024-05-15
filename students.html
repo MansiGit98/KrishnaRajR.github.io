@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><img src="images/charm--cross.png" alt="Logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <h1><a class="logo" href="#"><img class="large-logo" src="images/logo.png" alt="Logo"></a></h1>
+          <li><a class="hideOnMobile" href="index.html">Home</a></li>
+          <li><a class="hideOnMobile" href="index.html#news">News</a></li>
+          <li><a class="hideOnMobile" href="courses.html">Courses</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/ion--menu.png" alt="Logo"></a></li>
+          <li><a class="hideOnMobile" href="research.html">Research</a></li>
+          <li><a class="hideOnMobile" href="publication.html">Publications</a></li>
+          <li><a class="hideOnMobile" href="students.html">Students</a></li>
+          <li><a class="hideOnMobile" href="biography.html">Biography</a></li>
+          <li><a class="hideOnMobile" href="#contact">Contact</a></li>
+          <li><a class="hideOnMobile" href=""></a></li>
+        </ul>
+      </nav>
+      <div class="students-class">
+        <div class="welcome">Meet the Team</div>
+        <div>
+            <div class="title-head">Ph.D. Students: Independent supervision</div>
+            <div>
+                <ul class="team-list">
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rajesh Kumar</a>
+                        <div class="teamdate">2024</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Ananya Singh</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rani K</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rama Jain</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Shayama Tiwari</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rani</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pastteam" onclick="togglePhDStudents1(event)">
+                <a href="#">See Past Students</a>
+                <img src="images/typcn--plus.png" class="plus-img1" alt="plus">
+                <img src="images/typcn--minus.png" class="minus-img1" alt="minus" style="display: none;">
+            </div>
+            <hr>
+            <div id="jointSupervision1" style="display: none;" class="toggle-btn">
+                <div>
+                    <select id="studentDropdown1" class="dropdown" onchange="filterStudents1()">
+                        <option value="all">Year</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <ul id="teamList1" class="team-list">
+                        <li class="2019">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rajesh Kumar</a>
+                            <div class="teamdate">2019</div>
+                        </li>
+                        <li class="2020">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Shayama Prakash</a>
+                            <div class="teamdate">2020</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rani Meet</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                        <li class="option1">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rajesh Kumar</a>
+                            <div class="teamdate">2019</div>
+                        </li>
+                        <li class="2022">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Aarav Patel </a>
+                            <div class="teamdate">2022</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rama Jain</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="title-head">Ph.D. Students: Joint supervision</div>
+            <div>
+                <ul class="team-list">
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Shayama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Shayama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rani</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pastteam" onclick="togglePhDStudents2(event)">
+                <a href="#">See Past Students</a>
+                <img src="images/typcn--plus.png" class="plus-img2" alt="plus">
+                <img src="images/typcn--minus.png" class="minus-img2" alt="minus" style="display: none;">
+            </div>
+            <hr>
+            <div id="jointSupervision2" style="display: none;" class="toggle-btn">
+                <div>
+                    <select id="studentDropdown2" class="dropdown" onchange="filterStudents2()">
+                        <option value="all">Year</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <div>
+                    <ul id="teamList2" class="team-list">
+                        <li class="2019">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rama</a>
+                            <div class="teamdate">2019</div>
+                        </li>
+                        <li class="2020">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Shayama</a>
+                            <div class="teamdate">2020</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rani</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                        <li class="2022">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rani</a>
+                            <div class="teamdate">2022</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rama</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="title-head">M. Tech / M.Sc. Students</div>
+            <div>
+                <ul class="team-list">
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Shayama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rani</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    <li>
+                        <img src="images/download.jpeg" alt="student_image">
+                        <a href="#">Rama</a>
+                        <div class="teamdate">2019</div>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <div class="pastteam" onclick="togglePhDStudents3(event)">
+                <a href="#">See Past Students</a>
+                <img src="images/typcn--plus.png" class="plus-img3" alt="plus">
+                <img src="images/typcn--minus.png" class="minus-img3" alt="minus" style="display: none;">
+            </div>
+            <hr>
+            <div id="jointSupervision3" style="display: none;" class="toggle-btn">
+                <div>
+                    <select id="studentDropdown3" class="dropdown" onchange="filterStudents3()">
+                        <option value="all">Year</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <ul id="teamList3" class="team-list">
+                        <li class="2019">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rama</a>
+                            <div class="teamdate">2019</div>
+                        </li>
+                        <li class="2020">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Shayama</a>
+                            <div class="teamdate">2020</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rani</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                        <li class="2021">
+                            <img src="images/download.jpeg" alt="student_image">
+                            <a href="#">Rama</a>
+                            <div class="teamdate">2021</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="left_contact">
+          <h1 class="welcome title_left">Contact</h1> 
+        </div>
+        <div class="right_contact">
+          <ul> 
+            <li><img src="images/iconamoon--email-duotone.png"><a href="https://cart.iitd.ac.in/"class="clist">krishnaraj@iitd.ac.in</a></li>
+            <li><img src="images/material-symbols--call.png"><a href="https://cart.iitd.ac.in/"class="clist">01126548529</a></li>
+            <li><img src="images/mdi--location.png"><a href="https://cart.iitd.ac.in/"class="clist">V-252, CART, Block-V, IIT Delhi, New Delhi, Hauz Khas 110016</a></li>
+            <li><img src="images/mdi--compass.png"><a href="https://cart.iitd.ac.in/"class="clist">At Block 5 and take the stairs to Office 252 on Floor 2</a></li>
+          </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

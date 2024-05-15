@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><img src="images/charm--cross.png" alt="Logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <h1><a class="logo" href="#"><img class="large-logo" src="images/logo.png" alt="Logo"></a></h1>
+          <li><a class="hideOnMobile" href="index.html">Home</a></li>
+          <li><a class="hideOnMobile" href="index.html#news">News</a></li>
+          <li><a class="hideOnMobile" href="courses.html">Courses</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/ion--menu.png" alt="Logo"></a></li>
+          <li><a class="hideOnMobile" href="research.html">Research</a></li>
+          <li><a class="hideOnMobile" href="publication.html">Publications</a></li>
+          <li><a class="hideOnMobile" href="students.html">Students</a></li>
+          <li><a class="hideOnMobile" href="biography.html">Biography</a></li>
+          <li><a class="hideOnMobile" href="#contact">Contact</a></li>
+          <li><a class="hideOnMobile" href=""></a></li>
+        </ul>
+      </nav>
+      <div id="publications" class="news publication">
+
+        <div class="left_public">
+          <h1 class="welcome">Recent Publications</h1> 
+          <div>
+            <select id="filterDropdown" class="dropdown">
+              <option value="all">Type</option>
+              <option value="option1">Conference Paper</option>
+              <option value="option2">Journal Article</option>
+              <option value="option3">Book Section</option>
+              <option value="option4">Patent</option>
+              <option value="option5">Thesis</option>
+            </select>
+          </div>
+          <div>
+            <select id="dateDropdown" class="dropdown">
+              <option value="all">Date</option>
+              <option value="date1">2018</option>
+              <option value="date2">2019</option>
+              <option value="date3">2020</option>
+              <option value="date4">2021</option>
+              <option value="date5">2022</option>
+              <option value="date6">2023</option>
+              <option value="date7">2024</option>
+            </select>
+          </div>
+        </div>
+        <div class="right_public">
+          <ul> 
+            <li class="public option1 date1 date2">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Mark Spector, George Lucas, Sheldon Cooper</div>
+              <div class="time">2018-2019   A752-762</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option2  date1">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">George Lucas, Neil Perry, Santosh Rao </div>
+              <div class="time">2018   MN752-762</div>
+              <div class="topic">Exploring the ethical considerations of gene editing technologies in human enhancement</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option3  date3">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Aisha Kapoor, Rohan Mehta, Shivani Sharma, Ravi Shankar</div>
+              <div class="time">2020  052B762L</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">Project</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option1  date2">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Amitabh Singh, Priya Desai</div>
+              <div class="time">2019  75270062</div>
+              <div class="topic">Unveiling the mysteries of dark matter through cosmological observations and theoretical modeling</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option1  date7">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Mark Spector, George Lucas, Sheldon Cooper</div>
+              <div class="time">2024   A752-762</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option2  date6">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">George Lucas, Neil Perry, Santosh Rao </div>
+              <div class="time">2023  MN752-762</div>
+              <div class="topic">Exploring the ethical considerations of gene editing technologies in human enhancement</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option2  date5">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Aisha Kapoor, Rohan Mehta, Shivani Sharma, Ravi Shankar</div>
+              <div class="time">2022  052B762L</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option4  date3 date4 date5">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Amitabh Singh, Priya Desai</div>
+              <div class="time">2020-2022  75270062</div>
+              <div class="topic">Unveiling the mysteries of dark matter through cosmological observations and theoretical modeling</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option5  date4">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Mark Spector, George Lucas, Sheldon Cooper</div>
+              <div class="time">2021   A752-762</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option5  date5">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">George Lucas, Neil Perry, Santosh Rao </div>
+              <div class="time">2022   MN752-762</div>
+              <div class="topic">Exploring the ethical considerations of gene editing technologies in human enhancement</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option3  date7">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Aisha Kapoor, Rohan Mehta, Shivani Sharma, Ravi Shankar</div>
+              <div class="time">2024  052B762L</div>
+              <div class="topic">Navigating the challenges of remote work: Best practices for maintaining productivity and well-being</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+              <hr>
+            </li>
+            <li class="public option1  date1">
+              <img src="images/charm--notes.png" alt="Image 1">
+              <div class="names">Amitabh Singh, Priya Desai</div>
+              <div class="time">2018  75270062</div>
+              <div class="topic">Unveiling the mysteries of dark matter through cosmological observations and theoretical modeling</div>
+              <ul class="marks">
+                <li><a href="#">pdf</a></li>
+                <li><a href="#">cite</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    <div id="contact" class="contact">
+      <div class="left_contact">
+        <h1 class="welcome title_left">Contact</h1> 
+      </div>
+      <div class="right_contact">
+        <ul> 
+          <li><img src="images/iconamoon--email-duotone.png"><a href="https://cart.iitd.ac.in/"class="clist">krishnaraj@iitd.ac.in</a></li>
+          <li><img src="images/material-symbols--call.png"><a href="https://cart.iitd.ac.in/"class="clist">01126548529</a></li>
+          <li><img src="images/mdi--location.png"><a href="https://cart.iitd.ac.in/"class="clist">V-252, CART, Block-V, IIT Delhi, New Delhi, Hauz Khas 110016</a></li>
+          <li><img src="images/mdi--compass.png"><a href="https://cart.iitd.ac.in/"class="clist">At Block 5 and take the stairs to Office 252 on Floor 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
